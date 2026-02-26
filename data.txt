@@ -1,0 +1,26 @@
+- HashMap ek key–value pair data structure hai jisme har ek value ek unique key ke sath store hoti hai.
+  - Key unique hoti hai.
+  - Value same ho sakti hai (duplicate allowed).
+  - Internally hashing use karta hai, isliye operations O(1) average time me hote hain (insert, search, delete).
+
+- HashSet ek collection of unique elements hai.
+  - Duplicate values allow nahi hoti.
+  - Internally ye bhi hashing use karta hai.
+  - Order maintain nahi hota (random order me print ho sakta hai).
+
+- ArrayList ek class hai jo List interface ko implement karti hai.
+  - Ye dynamic array hai.
+  - Normal array me ek fixed size hota hai, but ArrayList automatically grow/shrink hoti hai jab elements add/remove karte ho.
+  - Ye resizable array hai.
+
+
+XOR of all elements = 4^1^2^1^2
+      = 4 ^ (1^1) ^ (2^2)
+      = 4 ^ 0 ^ 0 = 4^0 = 4
+Hence, 4 is the single element in the array.
+
+- for que of binary search its imp to find the range of ans
+
+-pattern bs on answers -: firstly find the range of possible ans then itrate   
+  through this range in main loop then forward the the value of ans to helper function
+  to check it is possible ans or not.

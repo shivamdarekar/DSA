@@ -1,0 +1,79 @@
+* When to use Two Pointers?
+Use when:
+- Array / string involved
+- Order matters (sorted or positional)
+- Need to compare elements efficiently
+- Brute force feels O(n²)
+
+Don’t use when:
+- Data unordered & no rule to move pointers
+- Need random access comparisons
+
+
+*- Sliding window me hum ek continuous subarray / substring (window) maintain 
+   karte hain aur us window ko expand ya shrink karte rehte hain.
+
+- in sliding window We maintain a running sum for a fixed-size window and update it 
+by adding the incoming element and removing the outgoing element as the window slides, achieving O(n) time complexity.
+   
+🔹 Sliding Window kab use karein?
+Conditions must satisfy:
+1️⃣ Contiguous subarray / substring
+2️⃣ Window ka koi property ho
+     - sum
+     - count
+     - frequency
+3️⃣ Window grow/shrink logically possible ho
+
+
+keyword	                       Use
+
+Reverse	                   Two pointers
+Palindrome	                Two pointers
+Sorted array	             Two pointers
+Subarray / substring	       Sliding window
+Maximum / minimum window	 Sliding window
+Longest / shortest	       Sliding window
+At most / at least	       Sliding window
+Continuous	                Sliding window
+
+
+Use HashSet when:
+ - Sirf presence / absence check karni ho
+ - Frequency ka koi role nahi
+ - Duplicate allowed nahi window me
+
+Typical conditions:
+ - “No repeating characters”
+ - “All elements distinct”
+
+  Situation	                  Use
+Only unique check	           HashSet
+Count / frequency	           HashMap
+Distinct limit	              HashMap
+No duplicates allowed	     HashSet
+Remove only when count = 0	  HashMap
+
+
+- exactly K = atMost(K) − atMost(K−1)
+ use this approach when The problem asks for “exactly K”
+- Look for words like:
+  - exactly K
+  - equal to K
+  - precisely K
+  - sum = K
+  - K distinct
+- also we able so cal at most easily
+
+-examples
+1️⃣ Subarrays with exactly K distinct integers
+2️⃣ Binary subarrays with sum = K
+3️⃣ Subarrays with exactly K odd numbers
+4️⃣ Subarrays with exactly K zeros
+5️⃣ Longest / count subarrays with exactly K constraints
+
+
+Longest / Shortest       → Variable window
+At most K                → Sliding window + count
+Exactly K                → atMost(K) - atMost(K-1)
+Fixed size K             → Sliding window (add right, remove left)

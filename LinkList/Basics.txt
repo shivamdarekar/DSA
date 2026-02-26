@@ -1,0 +1,31 @@
+- in linklist element/char/double cannot store in contigious location they store anyware
+  but in array or string they are contigious 
+- also size of linklist is increase or decrease at any moment
+
+- We use Linked List over Array when we need dynamic size and frequent insertions or deletions without shifting elements.
+
+- Linked lists use heap memory because their size is dynamic and nodes must persist beyond function calls, 
+  which is not possible with stack memory.
+
+-Heap memory ek runtime memory area hai jahan:
+   1. Objects dynamically allocate hote hain
+   2. Size compile time pe fixed nahi hota
+   3. Memory program ke run time par milti hai
+   4. Java me almost sab objects heap me bante hain(linklist)
+
+- Linked list me:
+    - Nodes ek function me bante hain
+    - Dusre function me access hote hain
+    - Program ke end tak survive karte hain
+    - Ye sirf heap memory me possible hai
+
+- Garbage Collection = Java ka automatic memory cleaner
+- Jo objects:
+   1.Ab use nahi ho rahe
+   2.Jin tak koi reference nahi pahunch raha
+   3.Java unko automatically delete kar deta hai
+- Garbage collection is the automatic process in Java that reclaims heap memory by removing objects that are no longer reachable.
+
+- when get a problem which involves creations of new LL then use concept of dummy node
+
+- at every timr firstly think abt the extreme solution then move ahed

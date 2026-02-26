@@ -1,0 +1,8 @@
+priority =>    ^
+             *    /
+             +    -
+
+operands = a - z || A-Z || 0-9
+
+- monotonic stack is a stack that maintains its elements in a fixed order 
+either increasing or decreasing.

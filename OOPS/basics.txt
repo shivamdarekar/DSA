@@ -1,0 +1,2 @@
+objects = entities in real world
+class  = grp of this entities
