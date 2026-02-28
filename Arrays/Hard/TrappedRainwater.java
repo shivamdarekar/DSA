@@ -4,7 +4,7 @@
 
 public class TrappedRainwater {
 
-    public static int trappedWater(int height[]){
+    public static int Brut(int height[]){
         int n = height.length;
 
         //calculate left max boundry
@@ -28,10 +28,33 @@ public class TrappedRainwater {
         }
         return trappedWater;
     }
+    //TC = O(3n) | SC = O(2n)
+
+    public static int Better(int[] heights){
+        int n = heights.length;
+
+        int rightMax[] = new int[n];
+        rightMax[n-1] = heights[n-1];
+        for(int i=n-2;i>=0;i--){
+            rightMax[i] = Math.max(heights[i],rightMax[i+1]);
+        }
+
+        int trappedWater = 0;
+        int leftMax = 0;
+        for(int i=0;i<n;i++){
+            leftMax = Math.max(leftMax,heights[i]);
+            int waterLevel = Math.min(leftMax,rightMax[i]);
+            trappedWater  = trappedWater + waterLevel - heights[i];
+        }
+        return trappedWater;
+    }
+    //TC = O(2n) | SC = O(n)
+
+    //optimal - 2 pointer approach
 
     public static void main(String args[]){
         int height[] = {4,2,0,6,3,2,5};
-        System.out.println("Trapped water: "+trappedWater(height));
+        System.out.println("Trapped water: "+Brut(height));
 
     }
 }

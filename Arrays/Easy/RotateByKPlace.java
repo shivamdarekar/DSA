@@ -51,8 +51,8 @@ public class RotateByKPlace{
     //Sc = O(1) = not using extra space
 
     public static void main(String args[]){
-        int arr[] = {1,2,3,4,6,7};
-        int d = 9;
+        int arr[] = {1,2,3,4,5,6,7};
+        int d = 3;
 
         //brutForce(arr, d);
 
