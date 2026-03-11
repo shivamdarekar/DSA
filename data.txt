@@ -24,3 +24,5 @@ Hence, 4 is the single element in the array.
 -pattern bs on answers -: firstly find the range of possible ans then itrate   
   through this range in main loop then forward the the value of ans to helper function
   to check it is possible ans or not.
+
+- reverse dikhe - 2 pointers

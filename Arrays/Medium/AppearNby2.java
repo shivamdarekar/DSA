@@ -20,7 +20,7 @@ public class AppearNby2{
         return -1;
     }//O(n^2)
 
-    public static int optimal(int arr[]){
+    public static int Better(int arr[]){
         Map<Integer,Integer>map = new HashMap<>();
         //Key → array element | Value → frequency (count)
 
@@ -34,10 +34,20 @@ public class AppearNby2{
             }
         }
         return -1;
+    }//O(n)
+
+    public static int optimal(int[] arr){
+        int n = arr.length;
+
+        Arrays.sort(arr);
+
+        return arr[n/2];
     }
 
     public static void main(String args[]){
         int arr[] = {3, 4, 1, 1, 1, 7, 1, 1};
-        System.out.print(brut(arr));
-    }
+        System.out.print(optimal(arr));
+    }//O(nlogn)
+
+    //if we sort the array then the no. appears more than n/2 times is come to n/2 place
 }

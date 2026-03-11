@@ -1,4 +1,4 @@
-//count subarray sum equal to k
+//count subarrays whos sum equal to k
 
 import java.util.*;
 public class CntSubarraySum{
@@ -43,8 +43,8 @@ public class CntSubarraySum{
     //another optimal approach in sliding window binary subarray which take TC(2n) SC(1)
 
     public static void main(String args[]){
-        int[] arr = {3, 1, 2, 4};
-        int k = 6;
-        System.out.print(Optimal(arr, k));
+        int[] arr = {1, 2, 3, 1, 1, 1, 1};
+        int k = 3;
+        System.out.print(Better(arr, k));
     }
 }

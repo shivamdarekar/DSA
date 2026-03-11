@@ -64,6 +64,7 @@ Remove only when count = 0	  HashMap
   - sum = K
   - K distinct
 - also we able so cal at most easily
+- when counting the no. subarrays
 
 -examples
 1️⃣ Subarrays with exactly K distinct integers

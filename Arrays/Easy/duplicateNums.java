@@ -1,4 +1,7 @@
 
+import java.util.*;
+
+
 public class duplicateNums {
 
     public static boolean numbers(int nums[]){
@@ -8,6 +11,27 @@ public class duplicateNums {
                     return true;
                 }
             }
+        }
+        return false;
+    }
+
+    public static boolean opt(int[] arr){
+        Set<Integer>st = new HashSet<>();
+
+        for(int i=0;i<arr.length;i++){
+            if(st.contains(arr[i])){
+                return true;
+            }
+            st.add(arr[i]);
+        }
+        return false;
+    }
+
+    public static boolean opt2(int[] arr){
+        Arrays.sort(arr);
+
+        for(int i=1;i<arr.length;i++){
+            if(arr[i] == arr[i-1]) return true;
         }
         return false;
     }
