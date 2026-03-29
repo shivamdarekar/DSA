@@ -63,7 +63,7 @@ public static Node insertTail(Node head, int val){
 
 public static Node insertBeforeTail(Node head, int val){
     if(head.next == null){
-        insertBeforeHead(head, val);
+        head = insertBeforeHead(head, val);
         return head;
     }
 

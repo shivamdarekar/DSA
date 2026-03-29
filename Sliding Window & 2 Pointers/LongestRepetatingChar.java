@@ -24,7 +24,7 @@ public class LongestRepetatingChar{
         }
         return maxLen;
     }// TC = O(n) | SC = O(1) or O(26) fixed size
-    //also in this que we dont recalculating maxfreq we reusing it ao no wrong ans just save extra time
+    //also in this que we dont recalculating maxfreq we reusing it so no wrong ans just save extra time
 
     public static void main(String[] args) {
         String str = "BAABAABBBAAA";

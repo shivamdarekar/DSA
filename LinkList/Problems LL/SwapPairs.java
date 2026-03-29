@@ -13,27 +13,33 @@ class Node{
     }
 }
 
-public class RemoveElementFromLL{
+public class SwapPairs{
 
     public static void print(Node head){
         Node temp = head;
+
         while(temp != null){
             System.out.print(temp.data+" ");
             temp = temp.next;
         }
     }
 
-    public static Node removeElement(Node head, int val){
-        Node dummy = new Node(-1);
-        Node t2 = dummy;
-        t2.next = head;
+    public static Node swapPairs(Node head){
+        if(head == null || head.next == null) return head;
 
-        while(t2.next != null){
-            if(t2.next.data == val){
-                t2.next = t2.next.next;
-            }else{
-                t2 = t2.next;
-            }
+        Node dummy = new Node(-1);
+        dummy.next = head;
+        Node prev = dummy;
+
+        while(prev.next != null && prev.next.next != null){
+            Node first = prev.next;
+            Node second = first.next;
+
+            first.next = second.next;
+            second.next = first;
+            prev.next = second;
+
+            prev = first;
         }
         return dummy.next;
     }
@@ -41,15 +47,12 @@ public class RemoveElementFromLL{
     public static void main(String[] args) {
        Node head = new Node(1);
        head.next = new Node(2);
-       head.next.next = new Node(6);
-       head.next.next.next = new Node(3);
+       head.next.next = new Node(3);
+       head.next.next.next = new Node(4);
        head.next.next.next.next = new Node(5);
        head.next.next.next.next.next = new Node(6);
-       head.next.next.next.next.next.next = new Node(6);
 
-       int val = 6;
-
-       head = removeElement(head, val);
-       print(head);
+       head = swapPairs(head);
+         print(head);
     }
 }

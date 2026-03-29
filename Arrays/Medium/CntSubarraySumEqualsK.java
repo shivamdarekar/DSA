@@ -1,7 +1,7 @@
 //count subarrays whos sum equal to k
 
 import java.util.*;
-public class CntSubarraySum{
+public class CntSubarraySumEqualsK{
 
     public static int Better(int[] arr, int k){
         int n = arr.length;

@@ -23,25 +23,22 @@ public class MaxSubarraySum {
         System.out.println("Max sum = "+maxSum);
     }
 
-    public static void kadanes(int numbers[]){
-        int ms = Integer.MIN_VALUE; //max sum
-        int cs = 0; //current sum
+    public static int kadanes(int nums[]){
+        int maxsum = nums[0];
+        int currsum = nums[0];
 
-        for(int i=0;i<numbers.length;i++){
-            cs = cs + numbers[i];
-            if(cs < 0){
-                cs = 0;
-            }
-            ms = Math.max(cs,ms);
+        for(int i=1;i<nums.length;i++){
+            currsum = Math.max(nums[i], currsum+nums[i]);
+            maxsum = Math.max(maxsum, currsum);
         }
-        System.out.println("max subarray sum is: "+ ms);
+        return maxsum;
     };
 
 
     public static void main(String args[]) {
         int numbers[] = {-2,-4,5,-7,6,2};
         //maxSubarraySum(numbers);
-        kadanes(numbers);
+        System.out.println(kadanes(numbers));        
 
     }
 }

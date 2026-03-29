@@ -10,7 +10,7 @@ public class MaxSumRow{
                 sum += arr[i][j];
             }
             if(sum > maxSum){
-                maxSum = sum;
+                maxSum = sum; 
                 row = i;
             }
         }

@@ -55,7 +55,7 @@ public class ReverseInKGroupSize{
                 head = KthNode;
             }else{
                 prevNode.next = KthNode;
-            }
+            }                                                
 
             prevNode = temp;
             temp = nextNode;

@@ -26,3 +26,22 @@ Hence, 4 is the single element in the array.
   to check it is possible ans or not.
 
 - reverse dikhe - 2 pointers
+
+
+------------- Heap ----------------
+
+- Min Heap = Smallest element is always at the top
+- Max heap = Largest element is always at the top
+- priority queue is by default min heap
+
+pq.add(5); ---> min heap example
+pq.add(2); =>   [1,2,5]  (not sorted, but heap property maintained)
+pq.add(1);
+
+pq.peek();  // 1 (smallest)
+pq.poll();  // removes 1
+
+
+
+- subarray sum <= k like que if all elements are +ve -> sliding Window
+otherwise prefix sum approach

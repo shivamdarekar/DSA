@@ -78,3 +78,7 @@ Longest / Shortest       → Variable window
 At most K                → Sliding window + count
 Exactly K                → atMost(K) - atMost(K-1)
 Fixed size K             → Sliding window (add right, remove left)
+
+
+- subarray sum <= k like que if all elements are +ve -> sliding Window
+otherwise prefix sum approach

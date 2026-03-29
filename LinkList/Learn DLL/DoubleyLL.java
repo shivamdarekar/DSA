@@ -125,7 +125,7 @@ public class DoubleyLL {
         Node head = convertToLL(arr);
         //print(head);
 
-        head = removeHead(head);
+        head = removeKthElement(head, 3);
         print(head);
     }
 }
