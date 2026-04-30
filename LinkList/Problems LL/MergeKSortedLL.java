@@ -78,7 +78,6 @@ public class MergeKSortedLL{
     }
     //TC - O(n * k) | Sc - O(1)
 
-
     // public static Node Optimal(Node[] lists){
     //     if(lists == null || lists.length == 0) return null;
 

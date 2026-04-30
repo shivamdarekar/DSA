@@ -24,7 +24,7 @@ public class MergeSortedArrays{
             k--;
         }
 
-        //we don't check for arr1 left or not becpz they already in the sorted order and correct place
+        //we don't check for arr1 left or not becoz they already in the sorted order and correct place
     }
 
     public static void main(String[] args) {

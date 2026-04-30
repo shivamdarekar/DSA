@@ -30,7 +30,7 @@ public class AstroidCollosion{
     }
 
     public static void main(String[] args) {
-        int[] arr = {4,2,3,1,-3,12,17,-16};
+        int[] arr = {4,2,3,1,-3,17,13,-16};
         int[] result = ans(arr);
         System.out.println(Arrays.toString(result));
     }

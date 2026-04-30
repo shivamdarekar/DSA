@@ -37,7 +37,7 @@ public class Leaders{
     }
 
     public static void main(String args[]){
-        int arr[] = {10,22,12,3,0,6}; 
+        int arr[] = {1,2,3,4,2,6,7,8}; 
         System.out.print(Optimal(arr));
     }
 }

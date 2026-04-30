@@ -2,9 +2,43 @@
 
 public class SetMAtrixZero{
 
-    public static void Better(int[][] arr){
+    public static void  Brut(int[][] arr){
         int m = arr.length;
         int n = arr[0].length;
+
+        for(int i=0;i<m;i++){
+            for(int j=0;j<n;j++){
+                if(arr[i][j] == 0){
+                    //mark entire row as -1
+                    for(int col = 0;col < n;col++){
+                        if(arr[i][col] != 0) {
+                            arr[i][col] = -1;
+                        }
+                    }   
+
+                    //mark entire coloum -1;
+                    for(int row = 0; row < m; row++){
+                        if(arr[row][j] != 0) {
+                            arr[row][j] = -1;
+                        }
+                    }             
+                }
+            }
+        }
+
+        for(int i=0;i<m;i++){
+            for(int j=0;j<n;j++){
+                if(arr[i][j] == -1){
+                    arr[i][j] = 0;
+                }
+            }
+        }
+    }
+
+
+    public static void Better(int[][] arr){
+        int m = arr.length; //row
+        int n = arr[0].length; //column
 
         boolean[] row = new boolean[m];
         boolean[] column = new boolean[n];
@@ -13,7 +47,7 @@ public class SetMAtrixZero{
             for(int j=0;j<n;j++){
                 if(arr[i][j] == 0){
                     row[i] = true;
-                    column[i] = true;
+                    column[j] = true;
                 }
             }
         }
@@ -83,7 +117,7 @@ public class SetMAtrixZero{
     public static void main(String[] args) {
         int arr[][] = {{1,8,1,8},{1,0,1,1},{1,0,1,4}};
 
-        Optimal(arr);
+        Better(arr);
 
 
         for(int[] row: arr){

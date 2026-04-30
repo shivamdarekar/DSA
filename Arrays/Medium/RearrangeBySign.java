@@ -20,7 +20,7 @@ public class RearrangeBySign{
     }
 
     public static void main(String args[]){
-        int arr[] = {3,1,-2,4,-5,-6};
+        int arr[] = {-3,1,2,4,-5,-6};
         int[] ans = Optimal(arr);
         for(int x:ans) System.out.print(x+" ");
     }

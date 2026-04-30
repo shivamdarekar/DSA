@@ -31,9 +31,9 @@ public class MaxSubarraySum {
             currsum = Math.max(nums[i], currsum+nums[i]);
             maxsum = Math.max(maxsum, currsum);
         }
+        //sum increase ho raha hai to update karo else chod do
         return maxsum;
     };
-
 
     public static void main(String args[]) {
         int numbers[] = {-2,-4,5,-7,6,2};
