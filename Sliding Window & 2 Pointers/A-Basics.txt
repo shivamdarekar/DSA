@@ -35,7 +35,7 @@ Subarray / substring	       Sliding window
 Maximum / minimum window	 Sliding window
 Longest / shortest	       Sliding window
 At most / at least	       Sliding window
-Continuous	                Sliding window
+Continuous	               Sliding window
 
 
 Use HashSet when:

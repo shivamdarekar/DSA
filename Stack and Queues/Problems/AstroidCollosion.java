@@ -15,6 +15,7 @@ public class AstroidCollosion{
                 //destroy both if size is equal
                 if(!st.isEmpty() && st.peek() == Math.abs(arr[i])){
                     st.pop();
+                    continue;
                 }
 
                 //if top of stack is a left-moving or no asteroid, add this one

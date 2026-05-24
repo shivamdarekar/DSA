@@ -45,7 +45,7 @@ public class KOKO{
     public static void main(String args[]){
         int piles[] = {7, 15, 6, 3};
         int h = 8;
-        System.out.println(brut(piles, h));
-        //System.out.print(Optimal(piles, h));
+        //System.out.println(brut(piles, h));
+        System.out.print(Optimal(piles, h));
     }
 }

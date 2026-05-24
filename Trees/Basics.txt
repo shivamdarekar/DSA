@@ -1,0 +1,15 @@
+Tree components
+- Root node - head
+- Leaf node - last node
+- child nodes
+- Ancestors - all privous nodes
+
+Binary tree - each node has at most 2 children
+Full binary tree - each node has either 0 or 2 children
+Complete binary tree - all levels are completely filled except the last level, which is filled from left to right
+Perfect binary tree - all levels are completely filled
+Balanced binary tree - height of tree is max log(n)
+
+- Inorder Traversal = left + root + right
+- Preorder Traversal = root + left + right
+- Postorder Traversal = left + right + root

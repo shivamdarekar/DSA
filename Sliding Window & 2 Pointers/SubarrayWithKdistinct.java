@@ -1,4 +1,4 @@
-//cnt subarray with exactly k distinct integers
+//cnt subarrays with exactly k distinct integers
 //Just a small trick if you asked longest then u need 
 //to apply sliding window directly and if you were asked to 
 //find no. of subarrays with exactly k elements then u need to firstly find at most k - at most k-1;

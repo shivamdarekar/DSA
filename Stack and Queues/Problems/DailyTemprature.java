@@ -1,7 +1,7 @@
 import java.util.*;
 public class DailyTemprature{
 
-    public int[] better(int[] arr){
+    public static int[] better(int[] arr){
         int n = arr.length;
         Stack<Integer>st = new Stack<>();
         int[] ans = new int[n];
@@ -22,7 +22,7 @@ public class DailyTemprature{
         return ans;
     }
 
-    public int[] optimal(int[] arr){
+    public static int[] optimal(int[] arr){
         int n = arr.length;
         Stack<Integer>st = new Stack<>();
         int[] ans = new int[n];
@@ -40,5 +40,9 @@ public class DailyTemprature{
 
     public static void main(String[] args) {
         int arr[] = {73,74,75,71,69,72,76,73};
+        int[] ans = optimal(arr);
+        for(int x:ans){
+            System.out.print(x+" ");
+        }
     }
 }

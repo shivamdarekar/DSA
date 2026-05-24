@@ -41,7 +41,7 @@ public class NextPermutation{
     }
 
     public static void main(String[] args) {
-        int[] arr = {3,2,1};
+        int[] arr = {1,2,3};
 
         Optimal(arr);
         for(int x:arr){

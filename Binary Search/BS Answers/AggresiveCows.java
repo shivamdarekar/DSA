@@ -56,6 +56,6 @@ public class AggresiveCows{
     public static void main(String args[]){
         int[] stall = {2,3,4,15,8,10}; //2 3 4 8 10 15
         int cows = 3;
-        System.out.print(Brut(stall, cows));
+        System.out.print(Optimal(stall, cows));
     }
 }

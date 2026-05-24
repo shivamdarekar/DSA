@@ -15,36 +15,29 @@ class Node{
 
 public class RotateLLByKPlaces{
 
-    public static Node findNewTail(Node head, int x){
-        int cnt = 1;
-        Node temp = head;
-
-        while(temp != null){
-            if(cnt == x) return temp; 
-            cnt++;
-            temp = temp.next;
-        }
-        return temp;
-    }
-
     public static Node rotateByK(Node head, int k){
         if(head == null || k == 0) return head;
 
-        Node tail = head;
+        Node temp = head;
         int len = 1;
-        while(tail.next != null){
-            tail = tail.next;
+        while(temp.next != null){
+            temp = temp.next;
             len++;
         }
 
-        if(k % len == 0) return head;
         k = k % len;
+        if(k == 0) return head;
 
-        tail.next = head;
-        Node newTail = findNewTail(head, len-k);
+        temp.next = head;
+        temp = head;
 
-        head = newTail.next;
-        newTail.next = null;
+        int newTail = len - k;
+        for(int i=1;i<newTail;i++){
+            temp = temp.next;
+        }
+
+        head = temp.next;
+        temp.next = null;
         return head;
     }
 
