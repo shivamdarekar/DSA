@@ -1,0 +1,2 @@
+BST = Left.data < node.data < right.data
+entire Left and right subtree be a valid BST

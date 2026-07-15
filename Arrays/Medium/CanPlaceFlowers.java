@@ -17,8 +17,8 @@ public class CanPlaceFlowers{
     }
 
     public static void main(String[] args) {
-        int[] arr = {1, 0, 0, 0, 1};
-        int k = 1;
+        int[] arr = {0, 0, 0, 0, 1};
+        int k = 2;
         System.out.println(canPlace(arr, k));
     }
 }

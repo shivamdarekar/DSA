@@ -38,7 +38,7 @@ public class CntSubarraySumDivisibleByK{
             mpp.put(rem, mpp.getOrDefault(rem, 0)+1);
         } 
         return cnt;
-    }//TC = O(n) | SC = O(k)-
+    }//TC = O(n) | SC = O(k)
 
     public static void main(String[] args) {
         int[] arr = {4,5,0,-2,-3,1};

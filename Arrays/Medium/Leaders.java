@@ -37,7 +37,7 @@ public class Leaders{
     }
 
     public static void main(String args[]){
-        int arr[] = {1,2,3,4,2,6,7,8}; 
-        System.out.print(Optimal(arr));
+        int arr[] = {10, 22, 12, 3, 0, 6}; 
+        System.out.print(Brut(arr));
     }
 }

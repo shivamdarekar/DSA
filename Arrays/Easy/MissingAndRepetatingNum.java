@@ -1,5 +1,5 @@
 import java.util.*;
-public class MiddleAndRepetatingNum{
+public class MissingAndRepetatingNum{
 
     public static List<Integer> ans(int[] arr){
       int n = arr.length;
